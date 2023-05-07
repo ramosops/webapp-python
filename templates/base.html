@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='show.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='cards.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <script src="https://kit.fontawesome.com/3b9a04f840.js" crossorigin="anonymous"></script>
+  <title>{{ title }} || Pilates ON</title>
+</head>
+
+
+<header>
+  <hgroup id="header">
+    <span>Pilates ON</span>
+  </hgroup>
+  <nav class="navbar">
+    <a id="home" href="/">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Membros
+      </button>
+      <div class="dropdown-content">
+        <a href="/membros">Consultar Membros</a>
+        <a href="/membros/novo">Cadastrar Membro</a>
+        <a href="/membros">Desativar Membro</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Atividades
+      </button>
+      <div class="dropdown-content">
+        <a href="/atividades">Consultar Atividades</a>
+        <a href="/atividades/novo">Cadastrar Atividade</a>
+        <a href="/atividades">Desativar Atividade</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Instrutores
+      </button>
+      <div class="dropdown-content">
+        <a href="/instrutores">Consultar Instrutores</a>
+        <a href="/instrutores/novo">Cadastrar Instrutor</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+  {% block content %}
+  {% endblock %}
+</body>
+
+<footer class="footer">
+  <p>
+    Não é só sobre praticar uma atividade! É sobre cuidar da Saúde, Ter Mais Qualidade de Vida e Bem-Estar, Melhorar a Autoestima e Ter Novas e Boas Experiências!
+  </p>
+
+</footer>
+
+</html>
