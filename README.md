@@ -6,7 +6,6 @@ A web application designed for pilates gyms to manage students, plans, instructo
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
 
 ## Features
 
